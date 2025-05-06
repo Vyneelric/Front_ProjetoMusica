@@ -52,8 +52,17 @@ async function exibirPesquisa(evento) {
     }
 }
 
-document.getElementById('nomeContato')
-    .addEventListener('keydown', exibirPesquisa)
+function novoContato(){
+    document.querySelector('main').className = 'form-show'
+}
 
-// exibir todas as músicas no carregamento inicial
+function voltarHome(){
+    document.querySelector('main').className = 'card-show'
+}
+
 exibirMusicas()
+
+
+document.getElementById('nome-contato').addEventListener('keydown',exibirPesquisa)
+document.getElementById('novo-contato').addEventListener('click', novoContato)
+document.getElementById('cancelar').addEventListener('click', voltarHome)

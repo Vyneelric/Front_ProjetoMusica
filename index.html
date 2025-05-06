@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="/JS/main.js" type="module" defer></script>
+    <script src="/PROJETINHO-//JS/main.js" type="module" defer></script>
     <title>Trabalho MUSIGA</title>
 </head>
 <body>
     <header>
-        <img src="./IMG/logoSenai.png" alt="Logo Senai">
-        <input type="text" id="nomeContato" placeholder="Digite o nome da música...">
-        <button id="novoContato">Novo Contato</button>
+        <img src="./img/SENAI_São_Paulo_logo.png" alt="Logo SENAI">
+        <input type="text" id="nome-contato" placeholder="Digite o nome do contato">
+        <button class="button show" id="novo-contato">Novo Contato</button>
     </header>
-    
-    <main>
-        <div id="container" class="container">
-            
-        </div>
+    <main class="card-show">
+        <div class="container" id="container"></div>
+        <form>
+            <div class="preview">
+                <input class= "preview-input" id="foto" type="file" accept="image/*">
+                <label class="preview-label" for="foto"></label>
+                <img class="preview-image" id="preview-image" src="./img/images.jfif" >
+            </div>
+            <div class="input-container">
+                <div class="input">
+                    <label >Nome da música:</label>
+                    <input type="text" class="input-text" id="musica" placeholder="Digite o nome da música...">
+                </div>
+                <div class="input">
+                    <label >Duração:</label>
+                    <input type="text" class="input-text" id="duracao" placeholder="Ex: 00:30:00">
+                </div>
+                <div class="input">
+                    <label >Data de Lançamento:</label>
+                    <input type="text" class="input-text" id="data_lancamento" placeholder="Ex: ano-mês-dia">
+                </div>
+                <div class="input">
+                    <label >Letra:</label>
+                    <input type="text" class="input-text" id="letra" placeholder="Digite a letra da música...">
+                </div>
+                <div class="input">
+                    <label >URL do Link:</label>
+                    <input type="text" class="input-text" id="link" placeholder="Digite um link...">
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" class="button" id="editar">Editar</button>
+                <button type="button" class="button" id="deletar">Deletar</button>
+                <button type="button" class="button show" id="salvar">Salvar</button>
+                <button type="button" class="button show" id="cancelar">Cancelar</button>
+            </div>
+        </form>
     </main>
 </body>
 </html>
